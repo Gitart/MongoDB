@@ -27,6 +27,13 @@ c:\MongoDB\bin\mongoimport.exe --db tst --collection contacts  --file d:\mongodb
 // Export comand
 c:\MongoDB\bin\mongoexport.exe --db tst --collection contacts  --out d:\mongodb\contact2.json
 
+// Sample Json format
+{ id: "a--0114", a : 3}
+{ id: "a--0115", a : 1}
+{ id: "a--0116", a : 2}
+{ id: "a--0117", a : 1}
+{ id: "a--0118", a : 2}
+
 
 
 // Create collection
