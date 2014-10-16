@@ -1,0 +1,7 @@
+db=db.getSiblingDB('ho');
+db.primer.insert({name:"Система"});
+db.primer.insert({name:"Подачи"});
+db.primer.insert({name:"Воды"});
+db.primer.insert({name:"Для отопительного"});
+db.primer.insert({name:"Сезона"});
+db.primer.insert({name:"Оснеью"});
