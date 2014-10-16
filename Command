@@ -1,3 +1,8 @@
+Link to official site MongoDB
+http://docs.mongodb.org/manual/reference/program/mongoexport/#export-in-csv-format
+
+
+
 // Run Databasde
 
 c:\MongoDB\bin\mongod.exe --dbpath d:\mongodb\db
