@@ -1,0 +1,20 @@
+
+// Create database with command str
+
+use newDB
+db.newtable.insert({name:"Doune Joe"})
+
+
+// Show all database
+show dbs
+
+
+// Show current connect
+db
+
+
+// Import
+c:\MongoDB\bin\mongoimport.exe --db tst --collection contacts  --file d:\mongodb\contact.json
+
+// Export comand
+c:\MongoDB\bin\mongoexport.exe --db tst --collection contacts  --out d:\mongodb\contact2.json
