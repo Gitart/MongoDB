@@ -32,3 +32,9 @@ c:\MongoDB\bin\mongoexport.exe --db tst --collection contacts  --out d:\mongodb\
 // Create collection
 db.CreateCollection("people", {size:21r4783648})
 
+
+// Find collections
+db.contacts.find()
+
+
+
