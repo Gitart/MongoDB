@@ -1,3 +1,7 @@
+// Run Databasde
+
+c:\MongoDB\bin\mongod.exe --dbpath d:\mongodb\db
+
 
 // Create database with command str
 
@@ -11,6 +15,10 @@ show dbs
 
 // Show current connect
 db
+
+
+// switch between database
+use databasename
 
 
 // Import
