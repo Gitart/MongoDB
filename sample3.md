@@ -46,3 +46,7 @@ func main() {
 	fmt.Printf("%#v %#v\n", all[0].Id, all[0].Title)
 }
 ```
+
+### Link
+https://github.com/swhite24/go-rest-tutorial
+
