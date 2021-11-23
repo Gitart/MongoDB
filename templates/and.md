@@ -51,3 +51,32 @@ query := bson.M{
 
 return pColl.Find(query).Select(bson.M{"first_name": 0}).All(&profiles)
 ```
+
+
+## Iso date
+
+```sql
+collection := client.Database("Hello").Collection("demo")
+    eventStartTime := "2013-10-01T01:11:18.965Z" //string format
+    eventEndTime := "2014-12-03T01:11:18.965Z"   //string format
+
+    const (
+        layoutISO = "2006-01-02T15:04:05.000Z"
+    )
+
+    //import "time" package.
+    t1, _ := time.Parse(layoutISO, eventStartTime) //converted to ISODate format
+    t2, _ := time.Parse(layoutISO, eventEndTime)   //converted to ISODate format
+    //fmt.Println(t1)
+    filterCursor, err := collection.Find(context.TODO(), bson.M{"sentat": bson.M{"$gt": t1, "$lt": t2}})
+    if err != nil {
+        log.Fatal(err)
+    }
+    var result []bson.M
+    if err = filterCursor.All(context.TODO(), &result); err != nil {
+        log.Fatal(err)
+    }
+    fmt.Println(result)
+    ```
+    
+    
