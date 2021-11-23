@@ -25,3 +25,12 @@ err = c.Find(
         },
     }).All(&sales_his)
 ```
+
+
+## filter time now
+
+```sql
+cur, err := collection.Find(ctx, bson.M{"createdAt": bson.M{
+    "$gte": primitive.NewDateTimeFromTime(time.Now().AddDate(-1, 0, 0)),
+}})
+```
